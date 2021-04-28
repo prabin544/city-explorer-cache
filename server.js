@@ -1,11 +1,12 @@
 'use strict';
 
-require('dotenv');
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
 const weather = require('./modules/weather.js');
 const app = express();
+app.use(cors());
 
 app.get('/weather', weatherHandler);
 

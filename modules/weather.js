@@ -1,14 +1,16 @@
 'use strict';
 
 let cache = require('./cache.js');
+require('dotenv').config();
+const superagent = require('superagent');
 
 module.exports = getWeather;
 
-function getWeather(latitude, longitude) {
-  const key = 'weather-' + latitude + longitude;
+function getWeather(lat, lon) {
+  const key = 'weather-' + lat + lon;
   const url = 'http://api.weatherbit.io/v2.0/forecast/daily';
   const queryParams = {
-    key: WEATHER_API_KEY,
+    key: process.env.WEATHER_API_KEY,
     lang: 'en',
     lat: lat,
     lon: lon,
