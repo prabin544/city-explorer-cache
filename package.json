@@ -1,0 +1,28 @@
+{
+  "name": "city-explorer-cache",
+  "version": "1.0.0",
+  "description": "This is the starter code for City Explorer API lab 10. To get started, run `npm init` and then work through the bugs inside of this code.",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabin544/city-explorer-cache.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prabin544/city-explorer-cache/issues"
+  },
+  "homepage": "https://github.com/prabin544/city-explorer-cache#readme"
+}
